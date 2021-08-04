@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.block-example {
+  width: 20rem;
+  height: 6rem;
+  margin: 0.5rem;
+  background-color: #eee;
+  display: inline-block;
+}
+.sizeCard {
+  width: 500px;
+  height: 200px;
+
+}
+.sizeCardD {
+  width: 500px;
+  height: 120px;
+
+}
+
+.center{
+  width: 600px;
+  height: 100px;
+
+}
+
+.Like{
+  width: 400px;
+  height: 100px;
+}
+
+
+
