@@ -1,20 +1,21 @@
 import React, {Component} from 'react';
-import '../index.css'
+import '../../../index.css'
 import {Col, Row} from "react-bootstrap";
 
-class Logo extends Component {
+class HeadInfo extends Component {
+
     render() {
         return (
 
                 <Row>
                 <Col xs={"auto"}>
-                    <strong>The Practical Dev</strong>
+                    <strong>{this.props.name}</strong>
                 </Col>
                 <Col xs={"auto"}>
-                    <div className="text-black-50">@ThePracticalDev</div>
+                    <div className="text-black-50">@{this.props.name}</div>
                 </Col>
                 <Col xs={"auto"}>
-                    <div className="text-black-50">Sep 10</div>
+                    <div className="text-black-50">{this.props.date}</div>
                 </Col>
                 </Row>
 
@@ -22,4 +23,4 @@ class Logo extends Component {
     }
 }
 
-export default Logo;
+export default HeadInfo;

@@ -70,6 +70,10 @@ class Like extends Component {
                         {this.state.count}
                         </span>
                     </Col>
+
+                    <Col className={"col-2"}>
+                        <img src="https://image.flaticon.com/icons/png/512/546/546394.png" alt="None" height={20}/>
+                    </Col>
                 </Row>
             </Container>
         );

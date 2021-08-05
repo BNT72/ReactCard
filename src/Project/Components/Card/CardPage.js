@@ -1,28 +1,29 @@
 import React, {Component} from 'react';
-import '../index.css';
+import '../../../index.css';
+import {Container} from "react-bootstrap";
 
 class CardPage extends Component {
     render() {
         return (
-            <div style={{backgroundColor: "#FFA500"}}
+            <Container style={{backgroundColor: this.props.color}}
                  className={"d-flex align-items-end flex-column m-auto rounded-top  sizeCard "}>
                 <div className={"p-2 me-auto"}>
                     <img className="pl-2  " height={50}
-                         src="https://yt3.ggpht.com/a/AATXAJwQiilMz42HqxDCG2XJ6PBerYP44HiJH6edpT-ZHg=s900-c-k-c0xffffffff-no-rj-mo"
+                         src={this.props.icon}
                          alt="HELOO"/>
                 </div>
                 <div className={"h1  text-light  align-self-center"}>
-                    Learning React? Start Small.
+                    {this.props.text}
                 </div>
 
                 <div className={"  bg-white   p-2 m-2"}>
-                    <strong className={"p-3"} style={{color: "#FFA500"}}>Dave Ceddia</strong>
+                    <strong className={"p-3"} style={{color: this.props.color }}>{this.props.cardName}</strong>
                     <img height={50}
-                         src="https://miro.medium.com/max/2400/1*PvySPRQOP2hkYakwe5hEiw.jpeg"
+                         src={this.props.cardIcon}
                          alt="HELOO" className={""}/>
                 </div>
 
-            </div>
+            </Container>
 
 
         );
